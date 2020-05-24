@@ -1,0 +1,22 @@
+{
+  "name": "MUtils",
+  "version": "0.1.0",
+  "summary": "A short description of MUtils.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Mephrine/MUtils",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mephrine": "dthwrld@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Mephrine/MUtils.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MUtils/Classes/**/*"
+}

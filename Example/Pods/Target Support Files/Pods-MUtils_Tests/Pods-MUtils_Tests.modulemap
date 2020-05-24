@@ -1,0 +1,6 @@
+framework module Pods_MUtils_Tests {
+  umbrella header "Pods-MUtils_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
