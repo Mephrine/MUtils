@@ -7,14 +7,14 @@
 
 import UIKit
 
-class UIVerticalAlignLabel: UILabel {
+public class UIVerticalAlignLabel: UILabel {
     @objc enum VerticalAlignment: Int {
         case top = 0
         case center = 1
         case bottom = 2
     }
     
-    @IBInspectable public var verticalAlignment : VerticalAlignment = .top {
+    @IBInspectable var verticalAlignment : VerticalAlignment = .top {
         didSet {
             setNeedsDisplay()
         }

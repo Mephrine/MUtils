@@ -16,14 +16,11 @@
 		0265F252A09E5FA6C26381DA4CAF8079 /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A225B80A1E8F92099CD4591565C0A3F6 /* CocoaLumberjack-dummy.m */; };
 		02A045AE6EF4A043664FA7D7650992E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C452BEF26505B4CEABA1E104611FA440 /* Foundation.framework */; };
 		030E9834247A4F50008CC0C6 /* UIVerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E9802247A4F50008CC0C6 /* UIVerticalAlignLabel.swift */; };
-		030E9835247A4F50008CC0C6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E9805247A4F50008CC0C6 /* Logger.swift */; };
 		030E9836247A4F50008CC0C6 /* CommonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E9808247A4F50008CC0C6 /* CommonAlert.swift */; };
 		030E9837247A4F50008CC0C6 /* UtilNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E980A247A4F50008CC0C6 /* UtilNetwork.swift */; };
 		030E9839247A4F50008CC0C6 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E980E247A4F50008CC0C6 /* Toast.swift */; };
 		030E983A247A4F50008CC0C6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E980F247A4F50008CC0C6 /* Utils.swift */; };
 		030E983B247A4F50008CC0C6 /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E9810247A4F50008CC0C6 /* DarkMode.swift */; };
-		030E983C247A4F50008CC0C6 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E9812247A4F50008CC0C6 /* Async.swift */; };
-		030E983D247A4F50008CC0C6 /* Schedulers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E9813247A4F50008CC0C6 /* Schedulers.swift */; };
 		030E983E247A4F50008CC0C6 /* JSON+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E9817247A4F50008CC0C6 /* JSON+Ext.swift */; };
 		030E983F247A4F50008CC0C6 /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E9818247A4F50008CC0C6 /* Dictionary+Ext.swift */; };
 		030E9840247A4F50008CC0C6 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E9819247A4F50008CC0C6 /* UITextField+Ext.swift */; };
@@ -966,14 +963,11 @@
 		02529E162FBA3E6DCC0FA8E1B193210A /* curry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = curry.swift; path = Source/Tools/curry.swift; sourceTree = "<group>"; };
 		029DF9CB906511E5D3F65A156C1FDDB0 /* Skip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Skip.swift; path = RxSwift/Observables/Skip.swift; sourceTree = "<group>"; };
 		030E9802247A4F50008CC0C6 /* UIVerticalAlignLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVerticalAlignLabel.swift; sourceTree = "<group>"; };
-		030E9805247A4F50008CC0C6 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		030E9808247A4F50008CC0C6 /* CommonAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAlert.swift; sourceTree = "<group>"; };
 		030E980A247A4F50008CC0C6 /* UtilNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilNetwork.swift; sourceTree = "<group>"; };
 		030E980E247A4F50008CC0C6 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		030E980F247A4F50008CC0C6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		030E9810247A4F50008CC0C6 /* DarkMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
-		030E9812247A4F50008CC0C6 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
-		030E9813247A4F50008CC0C6 /* Schedulers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedulers.swift; sourceTree = "<group>"; };
 		030E9817247A4F50008CC0C6 /* JSON+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON+Ext.swift"; sourceTree = "<group>"; };
 		030E9818247A4F50008CC0C6 /* Dictionary+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
 		030E9819247A4F50008CC0C6 /* UITextField+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
@@ -1880,33 +1874,14 @@
 		030E9803247A4F50008CC0C6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				030E9804247A4F50008CC0C6 /* Logger */,
-				030E9806247A4F50008CC0C6 /* Indicator */,
 				030E9807247A4F50008CC0C6 /* Alert */,
 				030E9809247A4F50008CC0C6 /* Network */,
-				030E980B247A4F50008CC0C6 /* WebView */,
 				030E980C247A4F50008CC0C6 /* Toast_Swift */,
 				030E980F247A4F50008CC0C6 /* Utils.swift */,
 				030E9810247A4F50008CC0C6 /* DarkMode.swift */,
-				030E9811247A4F50008CC0C6 /* Schedulers */,
 			);
 			name = Utils;
 			path = MUtils/Classes/Utils;
-			sourceTree = "<group>";
-		};
-		030E9804247A4F50008CC0C6 /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-				030E9805247A4F50008CC0C6 /* Logger.swift */,
-			);
-			path = Logger;
-			sourceTree = "<group>";
-		};
-		030E9806247A4F50008CC0C6 /* Indicator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Indicator;
 			sourceTree = "<group>";
 		};
 		030E9807247A4F50008CC0C6 /* Alert */ = {
@@ -1925,13 +1900,6 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		030E980B247A4F50008CC0C6 /* WebView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WebView;
-			sourceTree = "<group>";
-		};
 		030E980C247A4F50008CC0C6 /* Toast_Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -1939,15 +1907,6 @@
 				030E980E247A4F50008CC0C6 /* Toast.swift */,
 			);
 			path = Toast_Swift;
-			sourceTree = "<group>";
-		};
-		030E9811247A4F50008CC0C6 /* Schedulers */ = {
-			isa = PBXGroup;
-			children = (
-				030E9812247A4F50008CC0C6 /* Async.swift */,
-				030E9813247A4F50008CC0C6 /* Schedulers.swift */,
-			);
-			path = Schedulers;
 			sourceTree = "<group>";
 		};
 		030E9814247A4F50008CC0C6 /* Extension */ = {
@@ -4060,7 +4019,6 @@
 				030E9853247A4F50008CC0C6 /* UIViewController+Ext.swift in Sources */,
 				030E984F247A4F50008CC0C6 /* UIView+Rx.swift in Sources */,
 				030E984A247A4F50008CC0C6 /* Array+Ext.swift in Sources */,
-				030E983D247A4F50008CC0C6 /* Schedulers.swift in Sources */,
 				030E9846247A4F50008CC0C6 /* Single+Response.swift in Sources */,
 				030E9841247A4F50008CC0C6 /* Date+Ext.swift in Sources */,
 				030E9850247A4F50008CC0C6 /* UIButton+Rx.swift in Sources */,
@@ -4072,7 +4030,6 @@
 				030E9847247A4F50008CC0C6 /* PrimitiveSequence+SwiftyJSONMapper.swift in Sources */,
 				030E9839247A4F50008CC0C6 /* Toast.swift in Sources */,
 				030E9851247A4F50008CC0C6 /* NotificationManager+Rx.swift in Sources */,
-				030E983C247A4F50008CC0C6 /* Async.swift in Sources */,
 				030E983A247A4F50008CC0C6 /* Utils.swift in Sources */,
 				030E9845247A4F50008CC0C6 /* Response+SwiftyJSONMapper.swift in Sources */,
 				030E9856247A4F50008CC0C6 /* URL+Ext.swift in Sources */,
@@ -4089,7 +4046,6 @@
 				030E984E247A4F50008CC0C6 /* ObservableType+Ext.swift in Sources */,
 				030E9843247A4F50008CC0C6 /* MoyaProvider+Rx.swift in Sources */,
 				030E9854247A4F50008CC0C6 /* UIView+Ext.swift in Sources */,
-				030E9835247A4F50008CC0C6 /* Logger.swift in Sources */,
 				030E984C247A4F50008CC0C6 /* NSObject+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
