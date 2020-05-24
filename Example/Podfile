@@ -3,6 +3,32 @@ use_frameworks!
 target 'MUtils_Example' do
   pod 'MUtils', :path => '../'
 
+  pod  'CocoaLumberjack/Swift'
+
+    # Rx 기본
+  pod  "RxSwift"
+  pod  "RxCocoa"
+  pod  "RxSwiftExt"
+  pod  "RxOptional"
+  pod  "RxViewController"
+  
+    # UI
+  pod  "SnapKit"
+  pod  "Reusable"
+  pod  "Kingfisher"
+
+    # Network
+  pod  'Moya'
+
+    ## Parsing
+  pod  'SwiftyJSON'
+
+    # Misc.
+  pod "Then"
+  pod "SwiftyUserDefaults"
+  pod 'ReachabilitySwift'
+  
+  
   target 'MUtils_Tests' do
     inherit! :search_paths
 

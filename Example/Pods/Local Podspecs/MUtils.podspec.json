@@ -1,8 +1,8 @@
 {
   "name": "MUtils",
   "version": "0.1.0",
-  "summary": "A short description of MUtils.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "MUtils is my reactive utility Library.",
+  "description": "메프린의 Reactive 유틸 모음입니다.",
   "homepage": "https://github.com/Mephrine/MUtils",
   "license": {
     "type": "MIT",
@@ -16,7 +16,53 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "MUtils/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "MUtils/Classes/**/*",
+  "dependencies": {
+    "CocoaLumberjack/Swift": [
+
+    ],
+    "RxSwift": [
+
+    ],
+    "RxCocoa": [
+
+    ],
+    "RxSwiftExt": [
+
+    ],
+    "RxOptional": [
+
+    ],
+    "RxViewController": [
+
+    ],
+    "SnapKit": [
+
+    ],
+    "Reusable": [
+
+    ],
+    "Kingfisher": [
+
+    ],
+    "Moya": [
+
+    ],
+    "SwiftyJSON": [
+
+    ],
+    "Then": [
+
+    ],
+    "ReachabilitySwift": [
+
+    ],
+    "SwiftyUserDefaults": [
+
+    ]
+  },
+  "swift_version": "5.0"
 }
