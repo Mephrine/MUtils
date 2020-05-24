@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+#   s.description      = <<-DESC
+# TODO: Add long description of the pod here.
+#                        DESC
 
   s.homepage         = 'https://github.com/Mephrine/MUtils'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -28,15 +28,35 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Mephrine/MUtils.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'MUtils/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MUtils' => ['MUtils/Assets/*.png']
-  # }
+    
+    # Logging
+   s.dependency 'CocoaLumberjack/Swift'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+     # Rx 기본
+   s.dependency "RxSwift"
+   s.dependency "RxCocoa"
+   s.dependency "RxSwiftExt"
+   s.dependency "RxOptional"
+   s.dependency "RxViewController"
+  
+     # UI
+   s.dependency "SnapKit"
+   s.dependency "Reusable"
+   s.dependency "Kingfisher"
+
+     # Network
+   s.dependency 'Moya'
+
+     ## Parsing
+   s.dependency 'SwiftyJSON'
+
+     # Misc.
+   s.dependency "Then"
+   s.dependency "ReachabilitySwift"
+   s.dependency "SwiftyUserDefaults"
 end
