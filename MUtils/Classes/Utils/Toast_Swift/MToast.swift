@@ -18,7 +18,7 @@ import Foundation
  - Date: 19.12.03
  - Note: 커스텀 토스트.
 */
-class MToast: NSObject {
+public class MToast: NSObject {
     
     static var completion: ((_ didTap: Bool) -> Void)?
     
@@ -31,7 +31,7 @@ class MToast: NSObject {
      - Returns:
      - Note: 토스트 메시지를 띄움
     */
-    static func makeText(_ text: String) {
+    public static func makeText(_ text: String) {
         guard let window = UIApplication.shared.keyWindow else { return }
 //        guard let topController = window.visibleViewController else { return }
         Async.main {
@@ -52,7 +52,7 @@ class MToast: NSObject {
      - Returns:
      - Note: 토스트 메시지를 띄우며, 탭 시 실행할 클로저를 설정할 수 있음.
     */
-    static func makeText(_ text: String, completion: ((_ didTap: Bool) -> Void)?) {
+    public static func makeText(_ text: String, completion: ((_ didTap: Bool) -> Void)?) {
         guard let window = UIApplication.shared.keyWindow else { return }
 //        guard let topController = window.visibleViewController else { return }
         
