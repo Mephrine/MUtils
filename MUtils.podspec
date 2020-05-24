@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MUtils'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'MUtils is my reactive utility Library.'
   s.description      = '메프린의 Reactive 유틸 모음입니다.'
   s.homepage         = 'https://github.com/Mephrine/MUtils'
