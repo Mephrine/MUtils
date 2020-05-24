@@ -21,7 +21,7 @@ extension Dictionary {
         do {
             return try JSONDecoder().decode(T.self, from: self.json().data(using: .utf8)!)
         } catch let e {
-            log.e(e.localizedDescription)
+            print(e.localizedDescription)
             return nil
         }
     }
@@ -42,7 +42,7 @@ extension Dictionary {
             }
             return "{}"
         } catch let e {
-            log.e(e.localizedDescription)
+            print(e.localizedDescription)
             return "{}"
         }
     }

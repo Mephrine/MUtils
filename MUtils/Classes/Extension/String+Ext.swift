@@ -186,7 +186,7 @@ extension String {
         if let date = dateFormatterGet.date(from: self) {
             return date.formatted(to)
         } else {
-            log.e("There was an error decoding the string")
+            print("There was an error decoding the string")
         }
         return self
     }

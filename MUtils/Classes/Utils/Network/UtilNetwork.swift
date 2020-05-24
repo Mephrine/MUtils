@@ -22,7 +22,7 @@ public class UtilNetwork: NSObject {
         do {
             try optReachability = Reachability()
         } catch {
-            log.d("Reachable init error")
+            print("Reachable init error")
         }
     }
     
@@ -38,19 +38,19 @@ public class UtilNetwork: NSObject {
         guard let reachability = optReachability else { return }
         reachability.whenReachable = { reachability in
             if reachability.connection == .wifi {
-                log.d("Reachable via WiFi")
+                print("Reachable via WiFi")
             } else {
-                log.d("Reachable via Cellular")
+                print("Reachable via Cellular")
             }
         }
         reachability.whenUnreachable = { _ in
-            log.d("Not reachable")
+            print("Not reachable")
         }
         
         do {
             try reachability.startNotifier()
         } catch {
-            log.d("Unable to start notifier")
+            print("Unable to start notifier")
         }
     }
     
