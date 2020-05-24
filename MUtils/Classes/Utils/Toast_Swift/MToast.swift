@@ -32,7 +32,7 @@ public class MToast: NSObject {
         guard let window = UIApplication.shared.keyWindow else { return }
 //        guard let topController = window.visibleViewController else { return }
         Async.main {
-//            print("rootViewController : \(topController)")
+//            log.d("rootViewController : \(topController)")
 //            if let window = topController.view.window {
                 window.makeToast(text)
 //            }

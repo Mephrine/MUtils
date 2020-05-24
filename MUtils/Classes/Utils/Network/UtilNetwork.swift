@@ -15,14 +15,14 @@ import Reachability
  - Note: reachability를 이용해 네트워크 연결 관련하여 판단하는 클래스
 */
 public class UtilNetwork: NSObject {
-    static let shared = UtilNetwork()
+    public static let shared = UtilNetwork()
     private var optReachability: Reachability?
     
     override init() {
         do {
             try optReachability = Reachability()
         } catch {
-            print("Reachable init error")
+            log.e("Reachable init error")
         }
     }
     
@@ -38,19 +38,19 @@ public class UtilNetwork: NSObject {
         guard let reachability = optReachability else { return }
         reachability.whenReachable = { reachability in
             if reachability.connection == .wifi {
-                print("Reachable via WiFi")
+                log.d("Reachable via WiFi")
             } else {
-                print("Reachable via Cellular")
+                log.d("Reachable via Cellular")
             }
         }
         reachability.whenUnreachable = { _ in
-            print("Not reachable")
+            log.d("Not reachable")
         }
         
         do {
             try reachability.startNotifier()
         } catch {
-            print("Unable to start notifier")
+            log.e("Unable to start notifier")
         }
     }
     
