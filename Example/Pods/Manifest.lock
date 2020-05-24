@@ -10,7 +10,7 @@ PODS:
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
-  - MUtils (0.1.0):
+  - MUtils (1.0.1):
     - CocoaLumberjack/Swift
     - Kingfisher
     - Moya
@@ -25,6 +25,7 @@ PODS:
     - SwiftyJSON
     - SwiftyUserDefaults
     - Then
+    - Toast-Swift
   - ReachabilitySwift (5.0.0)
   - Reusable (4.1.1):
     - Reusable/Storyboard (= 4.1.1)
@@ -55,6 +56,7 @@ PODS:
   - SwiftyJSON (5.0.0)
   - SwiftyUserDefaults (5.0.0)
   - Then (2.6.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - CocoaLumberjack/Swift
@@ -72,6 +74,7 @@ DEPENDENCIES:
   - SwiftyJSON
   - SwiftyUserDefaults
   - Then
+  - Toast-Swift
 
 SPEC REPOS:
   trunk:
@@ -91,6 +94,7 @@ SPEC REPOS:
     - SwiftyJSON
     - SwiftyUserDefaults
     - Then
+    - Toast-Swift
 
 EXTERNAL SOURCES:
   MUtils:
@@ -101,7 +105,7 @@ SPEC CHECKSUMS:
   CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   Kingfisher: 7b64389a43139c903ec434788344c288217c792d
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
-  MUtils: 506d70db0c0dbc1ddf74853ce05204c8e4d55311
+  MUtils: e994ed804ea2525b0140f3aaf39ba139c6e540e9
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
@@ -114,7 +118,8 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   SwiftyUserDefaults: 33fcb42bd1feb53a37d873feb62c82967db5f7f6
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: fd651f8a9916deb60172cc2141e538a40db6e0ff
+PODFILE CHECKSUM: 9ceb4ce961a65d3a6a5eb47fc3304b8c5ff04f81
 
 COCOAPODS: 1.8.4

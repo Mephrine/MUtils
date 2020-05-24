@@ -7,10 +7,7 @@
 //
 
 import Foundation
-
-
-
-import Foundation
+import Toast_Swift
 
 /**
  # MToast.swift

@@ -46,4 +46,5 @@ Pod::Spec.new do |s|
    s.dependency "Then"
    s.dependency "ReachabilitySwift"
    s.dependency "SwiftyUserDefaults"
+   s.dependency "Toast-Swift"
 end

@@ -2,7 +2,7 @@
 //  Toast.swift
 //  Toast-Swift
 //
-//  Copyright (c) 2015-2017 Charles Scalesse.
+//  Copyright (c) 2015-2019 Charles Scalesse.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the
@@ -28,7 +28,7 @@ import ObjectiveC
 
 /**
  Toast is a Swift extension that adds toast notifications to the `UIView` object class.
- It is intended to be simple, lightweight, and easy to use. Most toast notifications
+ It is intended to be simple, lightweight, and easy to use. Most toast notifications 
  can be triggered with a single line of code.
  
  The `makeToast` methods create a new view and then display it as toast.
@@ -323,7 +323,7 @@ public extension UIView {
             activityView.layer.shadowOffset = style.shadowOffset
         }
         
-        let activityIndicatorView = UIActivityIndicatorView.init(style: .whiteLarge)
+        let activityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
         activityIndicatorView.center = CGPoint(x: activityView.bounds.size.width / 2.0, y: activityView.bounds.size.height / 2.0)
         activityView.addSubview(activityIndicatorView)
         activityIndicatorView.color = style.activityIndicatorColor
@@ -352,7 +352,7 @@ public extension UIView {
             toast.alpha = 1.0
         }) { _ in
             let timer = Timer(timeInterval: duration, target: self, selector: #selector(UIView.toastTimerDidFinish(_:)), userInfo: toast, repeats: false)
-            RunLoop.main.add(timer, forMode: RunLoop.Mode.common)
+            RunLoop.main.add(timer, forMode: .common)
             objc_setAssociatedObject(toast, &ToastKeys.timer, timer, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
@@ -767,7 +767,9 @@ public enum ToastPosition {
     }
 }
 
-fileprivate extension UIView {
+// MARK: - Private UIView Extensions
+
+private extension UIView {
     
     var csSafeAreaInsets: UIEdgeInsets {
         if #available(iOS 11.0, *) {

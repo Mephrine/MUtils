@@ -27,6 +27,7 @@ target 'MUtils_Example' do
   pod "Then"
   pod "SwiftyUserDefaults"
   pod 'ReachabilitySwift'
+  pod 'Toast-Swift'
   
   
   target 'MUtils_Tests' do
